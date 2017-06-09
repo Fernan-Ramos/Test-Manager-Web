@@ -769,7 +769,7 @@ angular.module('testManagerApp')
                     //Se guarda el nuevo cuestionario en el array de cuestionarios
                     menuFactory.save(data).$promise.then(
                         //success
-                        function (value) {
+                        function () {
                             $mdDialog.show({
                                 clickOutsideToClose: true,
                                 scope: $scope,
@@ -799,7 +799,7 @@ angular.module('testManagerApp')
                             });
                         },
                         //error
-                        function (error) {
+                        function () {
                             $mdDialog.show({
                                 clickOutsideToClose: true,
                                 scope: $scope,
