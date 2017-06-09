@@ -89,7 +89,7 @@ angular.module('testManagerApp')
      * @name testManagerApp.factory:AuthFactory
      * @description Factory que realiza las operaciones de control de usuarios
      */
-    .factory('AuthFactory', ['$resource', '$filter', '$http', '$localStorage', '$rootScope', '$window', 'baseURL', 'ngDialog', function ($resource, $filter, $http, $localStorage, $rootScope, $window, baseURL, ngDialog) {
+    .factory('AuthFactory', ['$resource', '$filter', '$http', '$localStorage', '$rootScope', 'baseURL', 'ngDialog', function ($resource, $filter, $http, $localStorage, $rootScope, baseURL, ngDialog) {
 
         var authFac = {};
         var TOKEN_KEY = 'Token';
